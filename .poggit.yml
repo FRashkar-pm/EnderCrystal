@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/FRashkar-pm/EnderCrystal
+build-by-default: true
+branches:
+- main
+projects:
+  EnderCrystal_v1.0.0:
+    path: EnderCrystal_v1.0.0/
+...
