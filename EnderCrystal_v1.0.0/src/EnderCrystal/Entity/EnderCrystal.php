@@ -27,6 +27,7 @@ class EnderCrystal extends Entity {
 
     public const TAG_SHOW_BOTTOM = "ShowBottom";
     public const NETWORK_ID = self::ENDER_CRYSTAL;
+    public static function getNetworkTypeId() : int{ return EntityLegacyIds::ENDER_CRYSTAL;	}
 
 #=========================================================================================================================#
 
