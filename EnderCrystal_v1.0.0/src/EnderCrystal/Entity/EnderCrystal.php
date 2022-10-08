@@ -17,7 +17,6 @@ use pocketmine\nbt\tag\DoubleTag;
 use pocketmine\nbt\tag\ListTag;
 use pocketmine\data\bedrock\EntityLegacyIds;
 use pocketmine\item\Item;
-use pocketmine\data\bedrock\EntityLegacyIds;
 
 #=========================================================================================================================#
 
