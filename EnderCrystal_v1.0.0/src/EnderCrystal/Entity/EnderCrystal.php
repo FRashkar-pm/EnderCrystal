@@ -67,7 +67,7 @@ class EnderCrystal extends Entity {
 #=========================================================================================================================#
 
     public function attack(EntityDamageEvent $source): void{
-     $pos = clone $this->asPosition();
+     $pos = clone $this->getPosition();
      $this->close();
      $power = "6";
      $explode = new Explosion($pos, $power, $this);
