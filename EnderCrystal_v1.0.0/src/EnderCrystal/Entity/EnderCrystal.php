@@ -36,28 +36,28 @@ class EnderCrystal extends Entity {
 #=========================================================================================================================#
 
     public function __construct(World $world, CompoundTag $nbt){
-     if(!$nbt->hasTag(self::TAG_SHOW_BOTTOM, ByteTag::class)){
+     if(!$nbt->getTag(self::TAG_SHOW_BOTTOM, ByteTag::class)){
       $nbt->setByte(self::TAG_SHOW_BOTTOM, 0);
      }
-     parent::__construct($level, $nbt);
+     parent::__construct($world, $nbt);
      }
 
 #=========================================================================================================================#
 
     public function isShowingBottom(): bool{
-     return boolval($this->NamedTag->getByte(self::TAG_SHOW_BOTTOM));
+     return boolval($this->getTag->getByte(self::TAG_SHOW_BOTTOM));
     }
 
 #=========================================================================================================================#
 
     public function setShowingBottom(bool $value){
-     $this->NamedTag->setByte(self::TAG_SHOW_BOTTOM, intval($value));
+     $this->getTag->setByte(self::TAG_SHOW_BOTTOM, intval($value));
     }
 
 #=========================================================================================================================#
 
     public function setBeamTarget(Vector3 $pos){
-     $this->NamedTag->setTag(new ListTag("BeamTarget", [
+     $this->getTag->setTag(new ListTag("BeamTarget", [
       new DoubleTag("", $pos->getX()),
       new DoubleTag("", $pos->getY()),
       new DoubleTag("", $pos->getZ()),
