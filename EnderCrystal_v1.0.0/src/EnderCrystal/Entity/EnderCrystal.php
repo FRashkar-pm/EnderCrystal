@@ -7,7 +7,7 @@ namespace EnderCrystal\Entity;
 #=========================================================================================================================#
 
 use pocketmine\event\entity\EntityDamageEvent;
-use pocketmine\level\Explosion;
+use pocketmine\world\Explosion;
 use pocketmine\entity\Entity;
 use pocketmine\level\Level;
 use pocketmine\math\Vector3;
@@ -17,6 +17,7 @@ use pocketmine\nbt\tag\DoubleTag;
 use pocketmine\nbt\tag\ListTag;
 use pocketmine\data\bedrock\EntityLegacyIds;
 use pocketmine\item\Item;
+use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
 
 #=========================================================================================================================#
 
@@ -25,8 +26,7 @@ class EnderCrystal extends Entity {
 #=========================================================================================================================#
 
     public const TAG_SHOW_BOTTOM = "ShowBottom";
-    public const NETWORK_ID = self::ENDER_CRYSTAL;
-    public static function getNetworkTypeId() : int{ return EntityLegacyIds::ENDER_CRYSTAL;	}
+    public const NETWORK_ID = EntityIds::ENDER_CRYSTAL;
 
 #=========================================================================================================================#
 
