@@ -8,6 +8,7 @@ namespace EnderCrystal\Entity;
 
 use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\world\Explosion;
+use pocketmine\entity\EntitySizeInfo;
 use pocketmine\entity\Entity;
 use pocketmine\world\World;
 use pocketmine\math\Vector3;
